@@ -303,3 +303,39 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 20ms (Views: 17.6ms | ActiveRecord: 0.8ms | Allocations: 5229)
 
 
+Started GET "/" for ::1 at 2024-06-05 14:27:04 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+Filter chain halted as :basic_auth rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 1292)
+
+
+Started GET "/" for ::1 at 2024-06-05 14:27:05 +0900
+Processing by PostsController#index as HTML
+Filter chain halted as :basic_auth rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 80)
+
+
+Started GET "/" for ::1 at 2024-06-05 14:27:19 +0900
+Processing by PostsController#index as HTML
+Filter chain halted as :basic_auth rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 80)
+
+
+Started GET "/" for ::1 at 2024-06-05 14:27:19 +0900
+Processing by PostsController#index as HTML
+Filter chain halted as :basic_auth rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 80)
+
+
+Started GET "/" for ::1 at 2024-06-05 14:27:21 +0900
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (6.1ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 23.9ms | Allocations: 7213)
+  Rendered layout layouts/application.html.erb (Duration: 95.3ms | Allocations: 42579)
+Completed 200 OK in 122ms (Views: 92.6ms | ActiveRecord: 13.3ms | Allocations: 46499)
+
+
